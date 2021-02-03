@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Prevision</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/css/w3css/w3.css">
+    <link rel="stylesheet" href="/static/css/fontawesome-free-5.15.2-web/css/all.css">
+    <link rel="stylesheet" href="/static/css/homepage.css">
+    <script type="text/javascript" src="{{ url_for('static', filename = 'js/slideshow.js') }}"></script>
+  </head>
+  <style>
+    body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
+
+    body, html {
+      height: 100%;
+      line-height: 1.8;
+    }
+
+    /* Full height image header */
+    .bgimg-1 {
+    background-position: center;
+    background-size: cover;
+    background-image: url("/static/media/as-bg.jpg");
+    min-height: 100%;
+    }
+
+    .w3-bar .w3-button {
+    padding: 16px;
+    }
+
+    .mySlide {display:none}
+    .w3-left, .w3-right, .w3-badge {cursor:pointer}
+    .w3-badge {height:13px;width:13px;padding:0}
+  </style>
+  <body>
+    <!-- Navbar (sit on top) -->
+  <div class="w3-top">
+    <div class="w3-bar w3-white w3-card" id="myNavbar">
+      <a href="#home" class="w3-bar-item w3-button w3-wide">Prevision</a>
+      <!-- Right-sided navbar links -->
+      <div class="w3-right w3-hide-small">
+        <a href="#about" class="w3-bar-item w3-button">ABOUT</a>
+        <a href="#team" class="w3-bar-item w3-button"><i class="fa fa-user"></i> TEAM</a>
+        <a href="#work" class="w3-bar-item w3-button"><i class="fa fa-th"></i> WORK</a>
+        <a href="#contact" class="w3-bar-item w3-button"><i class="fa fa-envelope"></i> CONTACT</a>
+      </div>
+    </a>
+  </div>
+</div>
+  <!-- Header with full-height image -->
+  <header class="bgimg-1 w3-display-container w3-opacity-max" id="home"></header>
+    <div class="w3-display-left w3-text-black" style="padding:48px">
+      <span class="w3-jumbo w3-hide-small">Interactive Laser Projector</span><br>
+      <span class="w3-large">Make your autonomous machines work with people</span>
+    </div>
+    <!-- Partners--> 
+    <div class="w3-display-bottomright w3-text-grey w3-large" style="padding:24px 48px">
+      <i class="fab fa-medium w3-hover-opacity"></i>
+      <i class="fab fa-github w3-hover-opacity"></i>
+      <i class="fab fa-twitter w3-hover-opacity"></i>
+      <i class="fab fa-youtube w3-hover-opacity"></i>
+    </div>
+    <div class="w3-display-bottomleft w3-text-grey w3-large" style="padding:24px 48px">
+      <img class="logo logo-pv" src="/static/media/pv-logo.png" style="width:100px">
+    </div>
+  <!-- Results -->
+  <div class="w3-container w3-light-grey" style="padding:128px 16px">
+    <div class="w3-content w3-display-container" style="width:40%">
+      <div class="mySlides">
+        <img class="w3-image w3-round-large" src="/static/media/bocht2a.png" style="width:100%">
+      </div>
+      <div class="mySlides">
+        <img class="w3-image w3-round-large" src="/static/media/bocht2b.png" style="width:100%">        
+      </div>
+      <div class="mySlides">
+        <img class="w3-image w3-round-large" src="/static/media/bocht2c.png" style="width:100%">        
+      </div>
+      <div class="w3-center w3-container w3-section w3-large w3-text-white w3-display-bottommiddle" style="width:100%">
+        <div class="w3-left w3-hover-text-khaki" onclick="plusDivs(-1)">&#10094;</div>
+        <div class="w3-right w3-hover-text-khaki" onclick="plusDivs(1)">&#10095;</div>
+        <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(1)"></span>
+        <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(2)"></span>
+        <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(3)"></span>
+      </div>
+    </div>
+  </div>
+  <script>
+    var slideIndex =1;
+    showDivs(slideIndex);
+  </script>
+  <!-- About Section -->
+  <div class="w3-container" style="padding:24px 16px" id="about">
+    <h3 class="w3-center">ABOUT PREVISION</h3>
+    <p class="w3-center w3-large">Key features of the projector</p>
+    <div class="w3-row-padding w3-center" style="margin-top:64px">
+      <div class="w3-quarter">
+        <i class="fa fa-desktop w3-margin-bottom w3-jumbo w3-center"></i>
+        <p class="w3-large">Interactive</p>
+        <p>Interactive and easy to use interface to design your projections.</p>
+      </div>
+      <div class="w3-quarter">
+        <i class="fa fa-heart w3-margin-bottom w3-jumbo"></i>
+        <p class="w3-large">People</p>
+        <p>Make your autonomous system ready to work with people.</p>
+      </div>
+      <div class="w3-quarter">
+        <i class="fas fa-industry w3-margin-bottom w3-jumbo"></i>
+        <p class="w3-large">Design</p>
+        <p>Clear and low power projection that will give feedback in all situations.</p>
+      </div>
+      <div class="w3-quarter">
+        <i class="fa fa-cog w3-margin-bottom w3-jumbo"></i>
+        <p class="w3-large">Support</p>
+        <p>Individual solutions are possible.</p>
+      </div>
+    </div>
+  </div>
+  <!-- Blogs -->
+  <div class="w3-container w3-light-grey" style="padding:128px 16px">
+    <div class="w3-row-padding">
+      <div class="w3-col m6">
+        <h3>Blog posts</h3>
+        <p>Here we will make a first blog post. Possibly a connection to a Medium account.</p>
+        <p><a href="#work" class="w3-button w3-black"><i class="fa fa-th"> </i> View Our Blogs</a></p>
+      </div>
+      <div class="w3-col m6">
+        <img class="w3-image w3-round-large" src="/static/media/projected_area.png" alt="Buildings" width="700" height="394">
+      </div>
+    </div>
+  </div>
+  <!-- Team Section -->
+  <div class="w3-container" style="padding:128px 16px" id="team">
+    <h3 class="w3-center">THE TEAM</h3>
+    <div class="w3-row-padding w3-grayscale" style="margin-top:64px">
+      <div class="w3-col l3 m6 w3-margin-bottom">
+        <div class="w3-card">
+          <img src="/static/media/stoorvogel.jpeg" alt="Martijn" style="width:100%">
+          <div class="w3-container">
+            <h3>Martijn Stoorvogel</h3>
+            <p class="w3-opacity">Founder & Developer</p>
+            <p>Passionate soccer player and Biomedical engineer at Eindhoven University of Technology. Contrary to his last name he is actually a really nice guy.</p>
+            <p><button class="w3-button w3-light-grey w3-block"><i class="fa fa-envelope"></i> Contact</button></p>
+          </div>
+        </div>
+      </div>
+      <div class="w3-col l3 m6 w3-margin-bottom">
+        <div class="w3-card">
+          <img src="/static/media/timo.jpg" alt="Timo" style="width:100%">
+          <div class="w3-container">
+            <h3>Timo Thans</h3>
+            <p class="w3-opacity">Founder & Developer</p>
+            <p>Passionate golfer and Computer Engineering student at Delft University of Technology. 
+              Part-time job as embedded software & hardware support at Prime Vision. Does not like monkey's.</p>
+            <p><button class="w3-button w3-light-grey w3-block"><i class="fa fa-envelope"></i> Contact</button></p>
+          </div>
+        </div>
+      </div>
+      </div>
+    </div>
+  </div>
+  </body>
+</html>
