@@ -1,5 +1,5 @@
 function plusDivs(n) {
-    showDivs(SlideIndex += n);
+    showDivs(slideIndex += n);
 }
 
 function currentDiv(n) {
