@@ -202,12 +202,12 @@
       <p><i class="fa fa-phone fa-fw w3-xxlarge w3-margin-right"></i> Phone: +31 024 123456789</p>
       <p><i class="fa fa-envelope fa-fw w3-xxlarge w3-margin-right"> </i> Email: machytech@yahoo.com</p>
       <br>
-      <form action="/static/php/mailtous.php" target="_blank">
-        <p><input class="w3-input w3-border" type="text" placeholder="Name" required name="Name"></p>
-        <p><input class="w3-input w3-border" type="text" placeholder="Email" required name="Email"></p>
-        <p><input class="w3-input w3-border" type="text" placeholder="Company" required name="Company"></p>
-        <p><input class="w3-input w3-border" type="text" placeholder="Subject" required name="Subject"></p>
-        <p><input class="w3-input w3-border" type="text" placeholder="Message" required name="Message"></p>
+      <form action="/sendemail.php" method="post">
+        <p><input class="w3-input w3-border" type="text" placeholder="Name" required name="Name" id="name"></p>
+        <p><input class="w3-input w3-border" type="text" placeholder="Email" required name="Email" id="email"></p>
+        <p><input class="w3-input w3-border" type="text" placeholder="Company" required name="Company" id="company"></p>
+        <p><input class="w3-input w3-border" type="text" placeholder="Subject" required name="Subject" id="subject"></p>
+        <p><input class="w3-input w3-border" type="text" placeholder="Message" required name="Message" id="message"></p>
         <p>
           <button class="w3-button w3-black" type="submit">
             <i class="fa fa-paper-plane"></i> SEND MESSAGE
