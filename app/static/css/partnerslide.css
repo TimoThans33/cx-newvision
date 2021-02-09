@@ -2,7 +2,7 @@
 .partner {display:none}
 .w3-left, .w3-right, .w3-badge {cursor:pointer}
 .w3-badge {height:13px;width:13px;padding:0}
-.logo-image{
+.logo-image img{
 	height: 1%;
     width: 1%;
 }
