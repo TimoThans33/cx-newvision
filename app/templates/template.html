@@ -214,7 +214,7 @@
         <p><input class="w3-input w3-border" type="text" placeholder="Email" required name="Email" id="email"></p>
         <p><input class="w3-input w3-border" type="text" placeholder="Company" required name="Company" id="company"></p>
         <p><input class="w3-input w3-border" type="text" placeholder="Subject" required name="Subject" id="subject"></p>
-        <p><textarea class="w3-input w3-border" type="text" placeholder="Message" required name="Message" id="message"></textarea></p>
+        <p><textarea class="w3-input w3-border" type="text" rows=10 placeholder="Message" required name="Message" id="message"></textarea></p>
         <p>
           <button class="w3-button w3-black" type="submit">
             <i class="fa fa-paper-plane"></i> SEND MESSAGE
@@ -224,29 +224,6 @@
       </br>
     </div>
   </div>
-  <?php
-      // from the form
-      $name = trim(strip_tags($_POST['name']));
-      $email = trim(strip_tags($_POST['email']));
-      $message = htmlentities($_POST['message']);
-      $subject = htmlentities($_POST['subject']);
-      // set here
-      
-      $to = 'machytech@yahoo.com';
-
-      $body = <<<HTML
-  $message
-  HTML;
-
-      $headers = "From: $email\r\n";
-      $headers .= "Content-type: text/html\r\n";
-
-      // send the email
-      mail($to, $subject, $body, $headers);
-
-      // redirect afterwords, if needed
-      header('Location: thanks.html');
-  ?>
   <!-- FOOTER -->
   <footer class="w3-center w3-black w3-padding-64">
   <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
